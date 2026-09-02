@@ -48,7 +48,7 @@ jobs:
         run: docker build -t despliegue-adso-nuevo:scan .
 
       - name: Ejecutar Trivy (escaneo de imagen y SBOM)
-        uses: aquasecurity/trivy-action@0.24.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: despliegue-adso-nuevo:scan
           format: table
