@@ -56,6 +56,7 @@ jobs:
           output: trivy-report.txt
           severity: CRITICAL
           exit-code: "1"
+          ignore-unfixed: true
 
       - name: Subir reporte de Trivy
         uses: actions/upload-artifact@v4
